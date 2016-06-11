@@ -1,0 +1,3 @@
+com\rest\ServletInitializer.class
+com\rest\RestProjectApplication.class
+com\rest\controller\RestProjectController.class
