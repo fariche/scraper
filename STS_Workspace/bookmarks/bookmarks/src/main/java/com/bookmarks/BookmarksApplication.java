@@ -4,8 +4,11 @@ import java.util.Arrays;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import com.bookmarks.dao.AccountRepository;
 import com.bookmarks.dao.BookmarkRepository;
@@ -13,6 +16,9 @@ import com.bookmarks.entity.Account;
 import com.bookmarks.entity.Bookmark;
 
 @SpringBootApplication
+@Configuration
+@ComponentScan
+@EnableAutoConfiguration
 public class BookmarksApplication {
 
 	@Bean

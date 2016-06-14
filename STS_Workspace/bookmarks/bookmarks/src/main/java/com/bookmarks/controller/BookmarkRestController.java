@@ -20,11 +20,11 @@ import com.bookmarks.util.UserNotFoundException;;
 
 @RestController
 @RequestMapping("/{userId}/bookmarks")
-class BookmarkRestController {
+public class BookmarkRestController {
 
-	private final BookmarkRepository bookmarkRepository;
+	public final BookmarkRepository bookmarkRepository;
 
-	private final AccountRepository accountRepository;
+	public final AccountRepository accountRepository;
 
 	@RequestMapping(method = RequestMethod.POST)
 	ResponseEntity<?> add(@PathVariable String userId, @RequestBody Bookmark input) {
