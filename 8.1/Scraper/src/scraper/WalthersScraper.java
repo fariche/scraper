@@ -12,17 +12,17 @@ import java.util.List;
  *
  * @author fja2
  */
-public class Scraper {
+public class WalthersScraper {
 
     /**
      * @param args the command line arguments
      * @throws java.lang.InterruptedException
      */
     public static void main(String[] args) throws InterruptedException, IOException {
-        ScraperUtil scrape = new ScraperUtil();
-       https://www.walthers.com/catalogsearch/result/?q=peco+track
+        WalthersScraperUtil scrape = new WalthersScraperUtil();
+       
         //Go to Webpage
-        scrape.getWebpage();
+        scrape.getWebpage("https://www.walthers.com/catalogsearch/result/?q=peco+track");
         
         //Scrape All Products
        // List<ScraperModel> scrapeList = scrape.scrapePage();
@@ -33,7 +33,7 @@ public class Scraper {
         //Print Tab Del to Screen
         
         //Close Driver
-        scrape.closeDriver();
+        //scrape.closeDriver();
     }
 
 }

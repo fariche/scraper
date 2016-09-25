@@ -29,8 +29,9 @@ public class ScraperUtil {
     WebDriver driver;
 
     protected void getWebpage() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\fja2\\Downloads\\selenium-java-3.0.0-beta3\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/Whip/data/jars/chromedriver");
         driver = new ChromeDriver();
+        System.out.println("UHh");
         driver.get("http://railroadbackdrops.com/category/all");
 
     }
